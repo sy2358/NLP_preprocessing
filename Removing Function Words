@@ -1,0 +1,10 @@
+#Removing Stop Words
+
+from nltk.tokenize import TreebankWordTokenizer
+from nltk.corpus import stopwords
+l = "artificial intelligence is all about applying mathematics"
+token = TreebankWordTokenizer().tokenize(l)
+stop_words = set(stopwords.words('english'))
+output = []
+
+print(output)
