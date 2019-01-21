@@ -1,0 +1,7 @@
+#Processing Text and Messages
+#Tokenization
+
+from nltk.tokenize import TreebankWordTokenizer
+l = "Artificial intelligence is all about applying mathematics"
+token = TreebankWordTokenizer().tokenize(l)
+print(token)
