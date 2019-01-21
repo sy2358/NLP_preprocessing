@@ -1,0 +1,9 @@
+# Removing Punctuation Marks
+
+from nltk.tokenize import TreebankWordTokenizer
+from nltk.corpus import stopwords
+l = "Artificial intelligence is all about applying mathematics!"
+token = TreebankWordTokenizer().tokenize(l)
+output = []
+output = [k for k in token if k.isalpha()]
+print(output)
